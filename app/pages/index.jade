@@ -1,0 +1,9 @@
+extends /blocks/layout-default/layout-default
+include /blocks/button/button
+block head
+	- var pageTitle = 'CSSSR';
+
+block content
+	+button('submit', 'Отправить') 
+	br
+	+button('reset', 'Очистить')
