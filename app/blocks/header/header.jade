@@ -1,0 +1,20 @@
+include /blocks/icon/icon
+
+mixin header(items)
+	+b('header').header&attributes(attributes)
+		+e('a').logo
+			+icon('logo-icon').icon
+			+e('span').text Waxom
+		+e('div').nav
+			+e('nav').menu
+				each link in items
+					+e('a').item(href=link.href)!= link.name
+			+e('div').nav-icons
+				+e('a')
+					+icon('icon-cart').nav-icon
+				+e('a')
+					+icon('icon-search').nav-icon
+
+
+		//+e('img').image(src='/assets/images/lightbulbon_121975.svg')
+					

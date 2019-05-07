@@ -1,9 +1,22 @@
 extends /blocks/layout-default/layout-default
 include /blocks/button/button
+include /blocks/header/header
+
 block head
-	- var pageTitle = 'CSSSR';
+	- var pageTitle = 'Waxom';
 
 block content
-	+button('submit', 'Отправить') 
-	br
-	+button('reset', 'Очистить')
+	+header([
+		{name:'Home', href:'#'},
+		{name:'About us', href:'#'},
+		{name:'Portfolio', href:'#'},
+		{name:'Features', href:'#'},
+		{name:'Blog', href:'#'},
+		{name:'Pricing', href:'#'},
+		{name:'Shortcodes', href:'#'},
+		{name:'Contacts', href:'#'}
+	])
+
+	//- +button('submit', 'Отправить')  
+	//- br
+	//- +button('reset', 'Очистить')
