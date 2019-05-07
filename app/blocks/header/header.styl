@@ -3,13 +3,7 @@
 	display flex
 	background-image url(/assets/images/slider-photo.png)
 	justify-content space-between
-	a
-		text-decoration none
-		cursor pointer
-		color #aeadac
-		transition color .5s
-	a:hover
-		color #978979
+
 	&__logo
 		padding-x 30px
 	&__icon
@@ -31,6 +25,12 @@
 	&__item
 		margin-right 20px
 		width 60px
+		text-decoration none
+		cursor pointer
+		color #aeadac
+		transition color .5s
+		&:hover
+			color #978979
 
 	&__nav-icons
 		display flex
