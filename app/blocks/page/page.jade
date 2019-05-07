@@ -1,4 +1,6 @@
+include /blocks/container/container
+
 mixin page()
 	+b('body').page&attributes(attributes)
-		+e('div').wrapper
+		+container()
 			block
