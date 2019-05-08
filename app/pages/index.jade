@@ -1,6 +1,7 @@
 extends /blocks/layout-default/layout-default
 include /blocks/button/button
 include /blocks/header/header
+include /blocks/slider/slider
 
 block head
 	- var pageTitle = 'Waxom';
@@ -16,7 +17,7 @@ block content
 		{name:'Shortcodes', href:'#'},
 		{name:'Contacts', href:'#'}
 	])
-
-	//- +button('submit', 'Отправить')  
+	+button('submit', 'Get started')  
+	
 	//- br
 	//- +button('reset', 'Очистить')
