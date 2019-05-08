@@ -2,6 +2,7 @@ extends /blocks/layout-default/layout-default
 include /blocks/button/button
 include /blocks/header/header
 include /blocks/slider/slider
+include /blocks/title/title
 
 block head
 	- var pageTitle = 'Waxom';
@@ -17,6 +18,7 @@ block content
 		{name:'Shortcodes', href:'#'},
 		{name:'Contacts', href:'#'}
 	])
+	+title('Waxom is Realization of your Ideas.', 'Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.')
 	+button('submit', 'Get started')  
 	
 	//- br
