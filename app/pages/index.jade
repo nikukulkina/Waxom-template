@@ -3,7 +3,7 @@ include /blocks/button/button
 include /blocks/header/header
 include /blocks/slider/slider
 include /blocks/title/title
-include /blocks/servise/servise
+include /blocks/services/services
 
 block head
 	- var pageTitle = 'Waxom';
@@ -22,10 +22,7 @@ block content
 	+title('Waxom is Realization of your Ideas.', 'Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.')
 	+button('submit', 'Get started')  
 	
-	+service('design-icon', 'Web & App Design', 'Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim.')
-	//- +service('dev-icon', 'Development', 'Lorem ipsum dolor sit amet, adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.')
-	//- +service('custom-icon', 'Customization', 'Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim.')
-	//- +service('marketing-icon', 'Marketing', 'Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim.')
-
+	+services()
+	
 	//- br
 	//- +button('reset', 'Очистить')
