@@ -5,6 +5,7 @@
 
 	&__logo
 		padding-x 30px
+		cursor pointer
 	&__icon
 		width 64px
 		height 56px
@@ -27,7 +28,9 @@
 		text-decoration none
 		cursor pointer
 		color #aeadac
-		transition color .5s
+		transition color .5s ease-out
+		will-change color
+
 		&:hover
 			color #978979
 

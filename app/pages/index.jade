@@ -1,28 +1,10 @@
 extends /blocks/layout-default/layout-default
-include /blocks/button/button
-include /blocks/header/header
-include /blocks/slider/slider
-include /blocks/title/title
-include /blocks/services/services
 
 block head
 	- var pageTitle = 'Waxom';
 
 block content
-	+header([
-		{name:'Home', href:'#'},
-		{name:'About us', href:'#'},
-		{name:'Portfolio', href:'#'},
-		{name:'Features', href:'#'},
-		{name:'Blog', href:'#'},
-		{name:'Pricing', href:'#'},
-		{name:'Shortcodes', href:'#'},
-		{name:'Contacts', href:'#'}
-	])
-	+title('Waxom is Realization of your Ideas.', 'Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.')
-	+button('submit', 'Get started')  
-	
-	+services()
+	+page()
 	
 	//- br
 	//- +button('reset', 'Очистить')
