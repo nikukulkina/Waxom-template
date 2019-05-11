@@ -1,0 +1,10 @@
+include /blocks/icon/icon
+
+mixin service(icon, title, description)
+	+b('div').service&attributes(attributes)
+		+icon(icon).img
+		br
+		+e('span').title
+			!= title
+		+e('p').description
+			!= description
