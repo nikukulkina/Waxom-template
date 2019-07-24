@@ -1,0 +1,28 @@
+include /blocks/button/button
+include /blocks/header/header
+include /blocks/slider/slider
+include /blocks/title/title
+include /blocks/services/services
+include /blocks/container/container
+include /blocks/slider/slider
+
+mixin page-main()
+	+b.page-main&attributes(attributes)
+		+e.top
+			+container()
+				+header([
+					{name:'Home', href:'#'},
+					{name:'About us', href:'#'},
+					{name:'Portfolio', href:'#'},
+					{name:'Features', href:'#'},
+					{name:'Blog', href:'#'},
+					{name:'Pricing', href:'#'},
+					{name:'Shortcodes', href:'#'},
+					{name:'Contacts', href:'#'}
+				])
+				+slider()
+				+title('Waxom is Realization of your Ideas.', 'Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.')
+				+button('submit', 'Get started')
+		
+		+container()
+			+services()

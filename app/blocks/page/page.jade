@@ -7,19 +7,4 @@ include /blocks/container/container
 
 mixin page()
 	+b('body').page&attributes(attributes)
-		+container().top
-			+header([
-				{name:'Home', href:'#'},
-				{name:'About us', href:'#'},
-				{name:'Portfolio', href:'#'},
-				{name:'Features', href:'#'},
-				{name:'Blog', href:'#'},
-				{name:'Pricing', href:'#'},
-				{name:'Shortcodes', href:'#'},
-				{name:'Contacts', href:'#'}
-			])
-			+title('Waxom is Realization of your Ideas.', 'Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.')
-			+button('submit', 'Get started')
-		
-		+container()
-			+services()
+		block
