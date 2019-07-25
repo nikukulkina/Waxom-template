@@ -1,7 +1,12 @@
+include /blocks/button/button
+include /blocks/main-title/main-title
+
 mixin slider()
 	+b.slider.js-slider.swiper-container
 		+e.inner.swiper-wrapper
-			+e.slide.swiper-slide Slide 1
+			+e.slide.swiper-slide
+				+main-title('Unique and Modern Design', 'Portfolio PSD Template', 'Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.')
+				+button('submit', 'Get started')
 			+e.slide.swiper-slide Slide 2
 			+e.slide.swiper-slide Slide 3
 		+e.prev-btn.swiper-button-prev
