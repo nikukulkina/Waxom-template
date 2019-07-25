@@ -1,0 +1,10 @@
+include /blocks/title/title
+
+mixin browsers()
+	+b.browsers&attributes(attributes)
+		+title('Waxom is Realization of your Ideas.', 'Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.')
+		+e.images
+			+b('img').browser-left(alt='browser-left', src='/assets/images/browser-left.png')
+			+b('img').browser-center(alt='browser-center', src='/assets/images/browser-center.png')
+			+b('img').browser-right(alt='browser-right', src='/assets/images/browser-right.png')
+
