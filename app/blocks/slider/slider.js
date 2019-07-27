@@ -6,15 +6,15 @@ export const initialSlider = () => {
 			el: '.swiper-pagination',
 			type: 'bullets'},
 		navigation: {
-			nextEl: '.swiper-button-next',
-			prevEl: '.swiper-button-prev'}
+			nextEl: '.slider__next',
+			prevEl: '.slider__prev'}
 	});
-	const prevBtn = document.querySelector('.slider__prev');
-	prevBtn.addEventListener('click', function () {
-		slider.slidePrev();
-	});
-	const nextBtn = document.querySelector('.slider__next');
-	nextBtn.addEventListener('click', function () {
-		slider.slideNext();
-	});
+	// const prevBtn = document.querySelector('.slider__prev');
+	// prevBtn.addEventListener('click', function () {
+	// 	slider.slidePrev();
+	// });
+	// const nextBtn = document.querySelector('.slider__next');
+	// nextBtn.addEventListener('click', function () {
+	// 	slider.slideNext();
+	// });
 };
