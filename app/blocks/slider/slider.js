@@ -9,4 +9,12 @@ export const initialSlider = () => {
 			nextEl: '.swiper-button-next',
 			prevEl: '.swiper-button-prev'}
 	});
+	const prevBtn = document.querySelector('.slider__prev');
+	prevBtn.addEventListener('click', function () {
+		slider.slidePrev();
+	});
+	const nextBtn = document.querySelector('.slider__next');
+	nextBtn.addEventListener('click', function () {
+		slider.slideNext();
+	});
 };

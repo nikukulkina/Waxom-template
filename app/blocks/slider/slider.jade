@@ -10,5 +10,9 @@ mixin slider()
 			+e.slide.swiper-slide Slide 2
 			+e.slide.swiper-slide Slide 3
 		+e.prev-btn.swiper-button-prev
+		+e('button').prev(type='button')
+			+e('img').prev-img(alt='left-button', src='assets/images/left.png')
 		+e.next-btn.swiper-button-next
+		+e('button').next(type='button')
+			+e('img').next-img(alt='right-button', src='assets/images/right.png')
 		+e.pagination.swiper-pagination
