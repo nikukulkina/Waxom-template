@@ -13,4 +13,7 @@ mixin slider()
 			+e('img').prev-img(alt='left-button', src='assets/images/left.png')
 		+e('button').next(type='button')
 			+e('img').next-img(alt='right-button', src='assets/images/right.png')
-		+e.pagination.swiper-pagination
+		+e.pagination
+			+e('span').dot.dot-active
+			+e('span').dot
+			+e('span').dot
