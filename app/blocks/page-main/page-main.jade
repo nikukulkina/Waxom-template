@@ -4,11 +4,12 @@ include /blocks/services/services
 include /blocks/container/container
 include /blocks/slider/slider
 include /blocks/browsers/browsers
+include /blocks/insertion/insertion
 
 
 mixin page-main()
 	+b.page-main&attributes(attributes)
-		+e.top
+		+e('section').top
 			+container()
 				+header([
 					{name:'Home', href:'#'},
@@ -21,8 +22,13 @@ mixin page-main()
 					{name:'Contacts', href:'#'}
 				])
 				+slider()
-		
-		+container()
-			+services()
-			+browsers()
+		+e('section').categories
+			+container()
+				+services()
+		+e.browsers-ideas
+			+container()
+				+browsers()
+		+e.gradient
+			+container()
+				+insertion()
 

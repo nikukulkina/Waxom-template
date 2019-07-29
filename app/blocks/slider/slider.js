@@ -11,9 +11,9 @@ export const initialSlider = () => {
 
 	slider.on('slideChange', function () {
 		console.log(slider.realIndex);
-		const d = document.querySelector('.dot-active');
-		d.classList.remove('dot-active');
-		dots[slider.realIndex].classList.add('dot-active');
+		const d = document.querySelector('.slider__dot_active');
+		d.classList.remove('slider__dot_active');
+		dots[slider.realIndex].classList.add('slider__dot_active');
 	});
 
 	for (let i = 0; i < dots.length; i++) {
