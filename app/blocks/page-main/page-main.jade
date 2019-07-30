@@ -5,6 +5,7 @@ include /blocks/container/container
 include /blocks/slider/slider
 include /blocks/browsers/browsers
 include /blocks/insertion/insertion
+include /blocks/projects/projects
 
 
 mixin page-main()
@@ -31,4 +32,8 @@ mixin page-main()
 		+e.gradient
 			+container()
 				+insertion()
+		+e('section').waxom-projects
+			+container()
+				+projects()
+
 

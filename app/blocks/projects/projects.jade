@@ -1,0 +1,13 @@
+include /blocks/title/title
+include /blocks/project/project
+
+mixin projects()
+	+b.projects&attributes(attributes)
+		+title('Our Latest Projects.', 'Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.')
+		+e.wrap
+			+project('/assets/images/phone.png', 'Claritas Etiam Processus', 'Photography, Nature')
+			+project('/assets/images/rock.png', 'Quam Nutamus Farum', 'Graphic Design, Mock-Up')
+			+project('/assets/images/book.png', 'Usus Legentis Videntur', 'Photography, Holiday')
+			+project('/assets/images/birds.png', 'Claritas Etiam Processus', 'Photography, Nature')
+			+project('/assets/images/book1.png', 'Quam Nutamus Farum', 'Graphic Design, Mock-Up')
+			+project('/assets/images/rock1.png', 'Usus Legentis Videntur', 'Photography, Holiday')
