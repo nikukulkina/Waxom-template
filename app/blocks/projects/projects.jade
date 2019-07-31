@@ -1,4 +1,5 @@
 include /blocks/title/title
+include /blocks/button/button
 include /blocks/project/project
 include /blocks/categories/categories
 
@@ -6,11 +7,12 @@ mixin projects()
 	+b.projects&attributes(attributes)
 		+title('Our Latest Projects.', 'Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.')
 		+categories()
-		+e.wrap
-			+project('/assets/images/phone.png', 'Claritas Etiam Processus', 'Photography, Nature')
-			+project('/assets/images/rock.png', 'Quam Nutamus Farum', 'Graphic Design, Mock-Up')
-			+project('/assets/images/book.png', 'Usus Legentis Videntur', 'Photography, Holiday')
-			+project('/assets/images/birds.png', 'Claritas Etiam Processus', 'Photography, Nature')
-			+project('/assets/images/book1.png', 'Quam Nutamus Farum', 'Graphic Design, Mock-Up')
-			+project('/assets/images/rock1.png', 'Usus Legentis Videntur', 'Photography, Holiday')
+		+e.wrap.projects-js
+			+project('web-design', '/assets/images/phone.png', 'Claritas Etiam Processus', 'Photography, Nature')
+			+project('web-design', '/assets/images/rock.png', 'Quam Nutamus Farum', 'Graphic Design, Mock-Up')
+			+project('mobile-app', '/assets/images/book.png', 'Usus Legentis Videntur', 'Photography, Holiday')
+			+project('photography', '/assets/images/birds.png', 'Claritas Etiam Processus', 'Photography, Nature')
+			+project('illustration', '/assets/images/book1.png', 'Quam Nutamus Farum', 'Graphic Design, Mock-Up')
+			+project('photography', '/assets/images/rock1.png', 'Usus Legentis Videntur', 'Photography, Holiday')
+		+button('submit', 'load more').projects__button
 		

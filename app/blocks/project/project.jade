@@ -1,5 +1,5 @@
-mixin project(image, title, description)
-	+b('div').project&attributes(attributes)
+mixin project(data, image, title, description)
+	+b('div').project(data-category=data)
 		+e.wrap
 			+e('img').img(src=image, alt='Project Image')
 			+e.hover-icons
