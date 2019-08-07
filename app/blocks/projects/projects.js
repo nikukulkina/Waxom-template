@@ -16,10 +16,10 @@ export const projects = () => {
 				<svg class="project__arrow">
 					<use xlink:href="/assets/images/icon.svg#icon_arrow"></use>
 				</svg>
+			</div>
 			<span class="project__title">Claritas Etiam Processus</span>
 			<p class="project__description">Photography, Nature</p>
-		</div>
-	</div>`;
+		</div>`;
 	}
 	btn.addEventListener('click', function (e) {
 		e.preventDefault();

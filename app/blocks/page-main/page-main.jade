@@ -6,6 +6,7 @@ include /blocks/slider/slider
 include /blocks/browsers/browsers
 include /blocks/insertion/insertion
 include /blocks/projects/projects
+include /blocks/video-player/video-player
 
 
 mixin page-main()
@@ -35,5 +36,8 @@ mixin page-main()
 		+e('section').waxom-projects
 			+container()
 				+projects()
+		+e('section').presentation
+			+video-player()
+
 
 

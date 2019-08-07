@@ -2,7 +2,7 @@ export const category = () => {
 	const categories = document.querySelectorAll('.categories__item');
 	for (let i = 0; i < categories.length; i++) {
 		document.querySelector('.all').addEventListener('click', function () {
-			let projects = document.querySelectorAll('.project');
+			const projects = document.querySelectorAll('.project');
 			for (let q = 0; q < projects.length; q++) {
 				projects[q].classList.remove('project_hidden');
 			}
@@ -13,7 +13,7 @@ export const category = () => {
 			const content = document.querySelectorAll('.project[data-category = "' + id + '"]');
 			activCategory.classList.remove('categories__item_active');
 			categories[i].classList.add('categories__item_active');
-			let project = document.querySelectorAll('.project');
+			const project = document.querySelectorAll('.project');
 			for (let j = 0; j < project.length; j++) {
 				project[j].classList.add('project_hidden');
 			}
