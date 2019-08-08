@@ -44,6 +44,7 @@
 		align-items center
 
 	&__play-btn-icon, .video-player__volume-btn-icon
+		padding-top 5px
 		width 35px
 		height 35px
 		cursor pointer
@@ -51,26 +52,26 @@
 	&__panel-item
 		&_progress
 			width 70%
-	&__play-btn, .video-player__volume-btn
+	&__button
 		margin 0 10px
+		background-color transparent
+		border none
 	&__scroll-bar
 		-webkit-appearance none
 		width 100%
-		height 10px
+		height 6px
 		border 1px solid #D4D4D4
 		border-radius 2px
 		outline none
-	&__scroll-bar_progress
-		border-color #ff00ff
 
 // Здесь стили для ползунка, не работают - ругается линтер
 // 		&::-webkit-slider-thumb
 // 			-webkit-appearance none
-// 			width 18px
-// 			height 18px
+// 			width 10px
+// 			height 10px
 // 			cursor pointer
 // 			background #D4D4D4
-// 			border-radius 18px
+// 			border-radius 10px
 // 			transition .1s
 	&__scroll-bar_volume
 		width 80px
