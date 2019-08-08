@@ -4,7 +4,7 @@ include /blocks/title/title
 mixin video-player()
 	+b.video-player&attributes(attributes)
 		+e.box
-			+e('video').window(src='/assets/videos/waxom-video.mp4' width='550px' muted)
+			+e('video').window(src='/assets/videos/waxom-video.mp4' width='550px' preload='metadata')
 			+e.contain
 				+icon('icon-play').play
 				+title('Our Latest Projects.', 'Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.').video-player__title
