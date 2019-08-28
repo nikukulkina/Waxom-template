@@ -1,0 +1,8 @@
+mixin main-title(subtitle, title, description)
+	+b.main-title&attributes(attributes)
+		+e('h2').subtitle
+			!= subtitle
+		+e('h1').title
+			!=title
+		+e('p').description
+			!= description

@@ -1,0 +1,77 @@
+.project
+	margin 20px 10px
+	display flex
+	width 27%
+	flex-wrap wrap
+	flex-direction column
+	background-color #fbfaf8
+	transition color .3s ease-in-out
+
+	&__wrap
+		position relative
+		margin 0
+
+	&__wrap::before
+		position absolute
+		top 0
+		right 0
+		left 0
+		bottom 0
+		content ' '
+		background-color rgba(54, 47, 45, .5)
+		opacity 0
+		transition opacity .3s ease-in-out
+
+	&__img
+		width 100%
+	
+	&__arrow
+		position absolute
+		top 100%
+		left 5%
+		width 30px
+		height 10px
+		transform translateY(-100%)
+		color #fbfaf8
+
+	&__hover-icons
+		position absolute
+		top 50%
+		left 50%
+		visibility hidden
+		transform translate(-50%, -50%)
+
+	&__link, &__lupa
+		margin 0 10px
+		width 30px
+		height 30px
+		cursor pointer
+		color #ffffff
+
+	&__link:hover, &__lupa:hover
+		color #c7b299
+
+	&__title
+		padding 10px
+		font-size 20px
+		color #c7b299
+
+	&__description
+		padding 0 10px 15px
+		font-size 14px
+		color #d1d1d1
+		transition color .3s ease-in-out
+
+
+	&:hover
+		background-color #362f2d
+		.project__arrow
+			color #362f2d
+		.project__title
+			color #afacab
+		.project__description
+			color #c7b299
+		.project__wrap::before
+			opacity 1
+		.project__hover-icons
+			visibility visible

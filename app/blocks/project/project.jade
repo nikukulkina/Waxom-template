@@ -1,0 +1,12 @@
+mixin project(image, title, description)
+	+b('div').project&attributes(attributes)
+		+e.wrap
+			+e('img').img(src=image, alt='Project Image')
+			+e.hover-icons
+				+icon('link').link
+				+icon('lupa').lupa
+			+icon('arrow').arrow
+		+e('span').title
+			!= title
+		+e('p').description
+			!= description

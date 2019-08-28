@@ -1,0 +1,39 @@
+include /blocks/button/button
+include /blocks/header/header
+include /blocks/services/services
+include /blocks/container/container
+include /blocks/slider/slider
+include /blocks/browsers/browsers
+include /blocks/insertion/insertion
+include /blocks/projects/projects
+
+
+mixin page-main()
+	+b.page-main&attributes(attributes)
+		+e('section').top
+			+container()
+				+header([
+					{name:'Home', href:'#'},
+					{name:'About us', href:'#'},
+					{name:'Portfolio', href:'#'},
+					{name:'Features', href:'#'},
+					{name:'Blog', href:'#'},
+					{name:'Pricing', href:'#'},
+					{name:'Shortcodes', href:'#'},
+					{name:'Contacts', href:'#'}
+				])
+				+slider()
+		+e('section').categories
+			+container()
+				+services()
+		+e.browsers-ideas
+			+container()
+				+browsers()
+		+e.gradient
+			+container()
+				+insertion()
+		+e('section').waxom-projects
+			+container()
+				+projects()
+
+
