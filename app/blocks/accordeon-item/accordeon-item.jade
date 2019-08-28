@@ -1,0 +1,7 @@
+mixin accordeon-item(title, description)
+	+b.accordeon-item&attributes(attributes)
+		+icon('item-icon').icon
+		+e.title 
+			!= title
+		+e.description
+			!= description

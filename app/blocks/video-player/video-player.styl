@@ -1,0 +1,85 @@
+.video-player
+	position relative
+
+	&__window, .video-player__controls
+		margin 0 auto
+		visibility hidden
+		&_visible, .video-player__controls_visible
+			visibility visible
+	&__window
+		display block
+	&__box
+		padding-y 80px
+
+	&__contain
+		position absolute
+		top 50%
+		left 50%
+		transform translate(-50%, -50%)
+		display flex
+		justify-content center
+		flex-direction column
+		width 550px
+
+	&__play
+		margin 0 auto
+		padding 15px
+		width 100px
+		height 100px
+		cursor pointer
+		color #ffffff
+		background-color transparent
+		border-radius 50%
+		transition background-color .3s ease-in
+		&:hover
+			background-color rgba(54, 47, 45, .5)
+	.hidden
+		display none
+
+	&__controls
+		display flex
+		width 550px
+		justify-content space-between
+		align-items center
+
+	&__play-btn-icon,
+	&__volume-btn-icon
+		padding-top 5px
+		width 35px
+		height 35px
+		cursor pointer
+		color #ffffff
+	&__volume-btn-icon
+		display block
+		background-color #f0f
+		& use
+			display block
+			width 35px
+			height 35px
+			background-color #f0f
+	&__panel-item
+		&_progress
+			width 70%
+	&__button
+		margin 0 10px
+		background-color transparent
+		border none
+	&__scroll-bar
+		-webkit-appearance none
+		width 100%
+		height 6px
+		border 1px solid #D4D4D4
+		border-radius 2px
+		outline none
+
+		// @stylint off 
+		&::-webkit-slider-thumb
+			-webkit-appearance none
+			width 10px
+			height 10px
+			cursor pointer
+			background #D4D4D4
+			border-radius 10px
+			transition .1s
+	&__scroll-bar_volume
+		width 80px

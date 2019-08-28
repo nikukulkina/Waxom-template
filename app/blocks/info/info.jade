@@ -1,0 +1,43 @@
+mixin info()
+	+b.info&attributes(attributes)
+		+e.info-block._about
+			+icon('logo-icon').logo
+			+e('span').brand Waxom
+			+e('p').text Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci suscipit lobortis claritatem.
+			+e('a').more Read More
+		+e.info-block._posts
+			+e('span').title Recent Posts
+			+e('a').post(href='#')
+				+e('span').date September 08 2015
+				+e('p').cut-post Lorem ipsum dolor sit amet, consectetuer adipiscing elit
+			+e('a').post(href='#')
+				+e('span').date September 08 2015
+				+e('p').cut-post Diam nonummy nibh euismod tincidunt ut laoreet dolore magna
+			+e('a').post(href='#')
+				+e('span').date September 08 2015
+				+e('p').cut-post Claritas est etiam processus dynamicus, qui sequitur mutationem per seacula quarta decima
+		+e.info-block._twitter				
+			+e('span').title Our Twitter
+			+e.twitt
+				+e('p').twitter-post 
+					+e('a').link(href='#') @waxom 
+					| Cum soluta nobis eleifend option congue nihil imperdiet doming
+				+e('span').twitter-date 3 mins ago
+			+e.twitt
+				+e('p').twitter-post Mirum est 
+				+e('a').link(href='#') #envato 
+				| notare quam littera gothica, quam nunc putamus parum anteposuerit litterarum
+				+e('span').twitter-date 5 hours ago
+			+e.twitt
+				+e('p').twitter-post Soluta nobis option 
+					+e('a').link._site(href='#') bit.ly/1Hniso7
+				+e('span').twitter-date 20 days ago
+		+e.info-block._widgets
+			+e('span').title Dribbble Widgets
+			+e.widget-photos
+				+e('img').widget-photo(src='/assets/images/widget01.png')
+				+e('img').widget-photo(src='/assets/images/widget02.png')
+				+e('img').widget-photo(src='/assets/images/widget03.png')
+				+e('img').widget-photo(src='/assets/images/widget04.png')
+
+		

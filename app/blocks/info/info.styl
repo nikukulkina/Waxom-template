@@ -1,0 +1,86 @@
+.info
+	padding 30px 0
+	display flex
+	justify-content space-between
+	color #555555
+
+	&__info-block
+		width 22%
+	&__logo
+		width 64px
+		height 56px
+		vertical-align middle
+	&__brand
+		font-family 'Raleway'
+		font-size 34px
+		font-weight 400
+		vertical-align middle
+		color $white
+	&__text
+		margin 20px 0
+	&__more
+		font-weight bold
+		cursor pointer
+		color $white
+		transition color .3s ease-in
+		&:hover
+			color #c7b299
+
+	&__title
+		margin-bottom 25px
+		display block
+		font-family 'Raleway'
+		font-size 24px
+		font-weight 600
+		color $white
+	&__post
+		margin 20px 0
+		display block
+		text-decoration none
+		cursor pointer
+		color #555555
+
+		&::after
+			margin-top 15px
+			display block
+			width 100%
+			height 1px
+			content ''
+			background-color #555555
+		&:hover
+			color #c7b299
+			.info__date // Знаю, что неправильно так писать, но не знаю как поправить
+				color $white
+	&__date
+	&__twitter-date
+		margin-bottom 5px
+		display block
+		font-size 12px
+		color #363636
+	&__cut-post,
+	&__date
+		transition color .3s ease-in
+
+	&__twitt
+		&::after
+			margin 15px 0
+			display block
+			width 100%
+			height 1px
+			content ''
+			background-color #555555
+	&__twitter-post
+		margin-bottom 10px
+	&__link
+		text-decoration none
+		color #00bff3
+		&_site
+			color #959595
+	&__widget-photos
+		display flex
+		justify-content space-between
+		flex-wrap wrap
+	&__widget-photo
+		margin-bottom 5px
+		width 49%
+	

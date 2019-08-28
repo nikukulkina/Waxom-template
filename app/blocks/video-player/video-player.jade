@@ -1,0 +1,21 @@
+include /blocks/icon/icon
+include /blocks/title/title
+
+mixin video-player()
+	+b.video-player&attributes(attributes)
+		+e.box
+			+e('video').window(src='/assets/videos/waxom-video.mp4' width='550px' preload='metadata')
+			+e.contain
+				+icon('icon-play').play
+				+title('Waxom Video Presentation', 'Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius, qui sequitur mutationem consuetudium.')._video-player
+			+e.controls
+				+e.panel-item
+					+e('button').button.video-player__play-btn
+						+icon('icon-play').play-btn-icon
+				+e.panel-item.video-player__panel-item_progress
+					+e('input').scroll-bar._progress(type='range')
+				+e.panel-item
+					+e('button').button.video-player__volume-btn
+						+icon('volume-mute').volume-btn-icon
+				+e.panel-item
+					+e('input').scroll-bar.video-player__scroll-bar_volume(type='range')

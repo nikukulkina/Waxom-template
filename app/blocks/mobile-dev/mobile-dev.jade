@@ -1,0 +1,10 @@
+include /blocks/title/title
+include /blocks/accordeon/accordeon
+
+mixin mobile-dev()
+	+b.mobile-dev&attributes(attributes)
+		+e.wrap
+			+e('img').image(src='/assets/images/iPhone.png' alt='iPhone')
+			+e.text
+				+title('Excellent for Mobile Devices.', 'Qisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius claritas. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum.')._mobile
+				+accordeon()

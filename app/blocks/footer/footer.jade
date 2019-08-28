@@ -1,0 +1,19 @@
+include /blocks/container/container
+
+mixin footer()
+	+b('footer').footer&attributes(attributes)
+		+e.wrap
+			+e.copyright
+				+e('span').item Copyright &copy; 
+					+e('a').link._outer-link(href='#') Waxom
+				+e('span').item 
+					+e('a').link(href='#') Privacy Policy
+				+e('span').item 
+					+e('a').link._faq(href='#') FAQ
+				+e('span').item 
+					+e('a').link(href='#') Support
+			+e.desidned
+				+e('span').item Designed by 
+					+e('a').link._outer-link(href='#') ThemeFire
+				+e('span').item Only on 
+					+e('a').link._outer-link(href='#') Envato Market

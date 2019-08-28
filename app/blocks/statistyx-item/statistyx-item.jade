@@ -1,0 +1,7 @@
+mixin statistyx-item(icon, count, text)
+	+b.statistyx-item&attributes(attributes)
+		+icon(icon).img
+		+e('span').count
+			!= count
+		+e('span').text
+			!= text
