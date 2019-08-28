@@ -1,0 +1,24 @@
+.footer
+	&__wrap
+		display flex
+		justify-content space-between
+		@media (max-width:960px)
+			justify-content center
+			flex-wrap wrap
+	&__copyright,
+	&__designed
+		margin-bottom 10px
+
+	&__item
+		padding-x 10px
+		color #555555
+		border-right 1px solid #555555
+		&:last-child
+			border none
+	&__link
+		text-decoration none
+		color #555555
+		&_faq
+			color #c7b299
+		&_outer-link
+			color $white

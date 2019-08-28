@@ -6,14 +6,23 @@
 	&__logo
 		padding-x 30px
 		cursor pointer
+		@media (max-width:1120px)
+			padding-x 10px
+
+
 	&__icon
 		width 64px
 		height 56px
 		vertical-align middle
 	&__text
+		font-family 'Raleway'
 		font-size 34px
-		font-weight bold
+		font-weight 400
 		vertical-align middle
+		color #ffffff
+		@media (max-width:1090px)
+			display none
+
 
 	&__menu
 		margin-right 20px 
@@ -22,12 +31,16 @@
 		display flex
 		align-items center
 		justify-content space-between
+		@media (max-width:1154px)
+			padding-x 0
+
+
 	&__item
 		margin-right 20px
 		width 60px
 		text-decoration none
 		cursor pointer
-		color #aeadac
+		color $white
 		transition color .5s ease-out
 		will-change color
 
@@ -38,6 +51,12 @@
 		display flex
 		justify-content space-between
 	&__nav-icon
-		padding-right  10px
-		width 24px
-		height 24px 
+		margin-right 20px
+		size (24px)
+		cursor pointer
+		color $white
+		transition color .5s ease-out
+		will-change color
+
+		&:hover
+			color #978979

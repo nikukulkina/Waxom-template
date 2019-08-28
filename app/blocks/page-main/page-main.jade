@@ -7,6 +7,11 @@ include /blocks/browsers/browsers
 include /blocks/insertion/insertion
 include /blocks/projects/projects
 include /blocks/video-player/video-player
+include /blocks/mobile-dev/mobile-dev
+include /blocks/statistyx/statistyx
+include /blocks/logos/logos
+include /blocks/info/info
+include /blocks/footer/footer
 
 
 mixin page-main()
@@ -38,6 +43,18 @@ mixin page-main()
 				+projects()
 		+e('section').presentation
 			+video-player()
-
-
-
+		+e('section').mobile
+			+container()
+				+mobile-dev()
+		+e('section').stat-info
+			+container()		
+				+statistyx()
+		+e('section').clients
+			+container()
+				+logos()
+		+e('section').summary
+			+container()
+				+info()
+		+e('section').final
+			+container()
+				+footer()

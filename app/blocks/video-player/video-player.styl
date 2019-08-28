@@ -7,8 +7,9 @@
 		&_visible, .video-player__controls_visible
 			visibility visible
 	&__window
-		padding-top 25px
 		display block
+	&__box
+		padding-y 80px
 
 	&__contain
 		position absolute
@@ -19,8 +20,6 @@
 		justify-content center
 		flex-direction column
 		width 550px
-	&__title
-		color #ffffff
 
 	&__play
 		margin 0 auto
@@ -43,12 +42,21 @@
 		justify-content space-between
 		align-items center
 
-	&__play-btn-icon, .video-player__volume-btn-icon
+	&__play-btn-icon,
+	&__volume-btn-icon
 		padding-top 5px
 		width 35px
 		height 35px
 		cursor pointer
 		color #ffffff
+	&__volume-btn-icon
+		display block
+		background-color #f0f
+		& use
+			display block
+			width 35px
+			height 35px
+			background-color #f0f
 	&__panel-item
 		&_progress
 			width 70%
@@ -64,14 +72,14 @@
 		border-radius 2px
 		outline none
 
-// Здесь стили для ползунка, не работают - ругается линтер
-// 		&::-webkit-slider-thumb
-// 			-webkit-appearance none
-// 			width 10px
-// 			height 10px
-// 			cursor pointer
-// 			background #D4D4D4
-// 			border-radius 10px
-// 			transition .1s
+		// @stylint off 
+		&::-webkit-slider-thumb
+			-webkit-appearance none
+			width 10px
+			height 10px
+			cursor pointer
+			background #D4D4D4
+			border-radius 10px
+			transition .1s
 	&__scroll-bar_volume
 		width 80px

@@ -5,11 +5,13 @@ export const player = () => {
 	const progressBar = document.querySelector('.video-player__scroll-bar_progress');
 	progressBar.value = 0;
 	progressBar.min = 0;
-	progressBar.max = video.duration;
-	console.log({video});
-	console.log(progressBar.min);
-	console.log(progressBar.max);
-	console.log(video.duration);
+	video.onloadedmetadata = function () {
+		progressBar.max = video.duration;
+		console.log({video});
+		console.log(progressBar.min);
+		console.log(progressBar.max);
+		console.log(video.duration);
+	};
 	const volumeBar = document.querySelector('.video-player__scroll-bar_volume');
 	volumeBar.min = 0;
 	volumeBar.max = 100;
