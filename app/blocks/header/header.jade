@@ -18,6 +18,9 @@ mixin header(items)
 						+icon('icon-search').nav-icon
 		+e.mobile
 			+burger-menu()
+			+e.mobile-menu
+				each link in items
+					+e('a').mobile-item(href=link.href)!= link.name
 			+e('a').logo
 				+icon('logo-icon').icon
 			+e('a')
