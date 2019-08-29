@@ -6,6 +6,7 @@ import {category}from '../blocks/categories/categories.js';
 import {projects}from '../blocks/projects/projects';
 import {player}from '../blocks/video-player/video-player';
 import {accordeon}from '../blocks/accordeon-item/accordeon-item';
+import {burger}from '../blocks/burger-menu/burger-menu.js';
 
 $(() => {
 	svg4everybody();
@@ -14,4 +15,5 @@ $(() => {
 	category();
 	player();
 	accordeon();
+	burger();
 });

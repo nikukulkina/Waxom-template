@@ -1,17 +1,28 @@
 include /blocks/icon/icon
+include /blocks/burger-menu/burger-menu
 
 mixin header(items)
 	+b('header').header&attributes(attributes)
-		+e('a').logo
-			+icon('logo-icon').icon
-			+e('span').text Waxom
-		+e('div').nav
-			+e('nav').menu
+		+e.desktop
+			+e('a').logo
+				+icon('logo-icon').icon
+				+e('span').text Waxom
+			+e('div').nav
+				+e('nav').menu
+					each link in items
+						+e('a').item(href=link.href)!= link.name
+				+e('div').nav-icons
+					+e('a')
+						+icon('icon-cart').nav-icon
+					+e('a')
+						+icon('icon-search').nav-icon
+		+e.mobile
+			+burger-menu()
+			+e.mobile-menu
 				each link in items
-					+e('a').item(href=link.href)!= link.name
-			+e('div').nav-icons
-				+e('a')
-					+icon('icon-cart').nav-icon
-				+e('a')
-					+icon('icon-search').nav-icon
+					+e('a').mobile-item(href=link.href)!= link.name
+			+e('a').logo
+				+icon('logo-icon').icon
+			+e('a')
+				+icon('icon-search').nav-icon
 					
