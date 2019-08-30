@@ -2,9 +2,7 @@
 	&__wrap
 		display flex
 		justify-content space-between
-		@media (max-width:960px)
-			justify-content center
-			flex-wrap wrap
+		
 	&__copyright,
 	&__designed
 		margin-bottom 10px
@@ -22,3 +20,13 @@
 			color #c7b299
 		&_outer-link
 			color $white
+	@media (max-width:960px)
+		justify-content center
+		flex-wrap wrap
+	@media (max-width:486px)
+		font-size 10px
+		&__copyright
+			margin-bottom 0
+	@media (max-width:390px)
+		&__item
+			padding-x 10px

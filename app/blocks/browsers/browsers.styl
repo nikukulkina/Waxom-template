@@ -4,17 +4,47 @@ img
 	&__images
 		position relative
 		margin-top 30px
-		height 402px
+		height 350px
 
 	&__image-left
 		position absolute
-		top 17%
+		bottom 0
 	&__image-right
 		position absolute
-		top 17%
 		right 1%
+		bottom 0
 	&__image-center
 		position absolute
 		z-index 1
 		left 50%
+		bottom 0
 		transform translateX(-50%)
+	@media (min-width:1140px)
+		&__images
+			height 420px
+	@media (max-width:900px)
+		&__images
+			height 300px
+	@media (max-width:800px)
+		&__images
+			margin 0
+			height 250px
+	@media (max-width:700px)
+		&__images
+			height 182px
+	@media (max-width:541px)
+		&__images
+			height 170px
+	@media (max-width:500px)
+		&__images
+			height 150px
+	@media (max-width:450px)
+		&__images
+			height 135px
+	@media (max-width:380px)
+		&__images
+			height 122px
+	@media (max-width:350px)
+		&__images
+			height 110px
+	
