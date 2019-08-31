@@ -1,10 +1,12 @@
 .video-player
 	position relative
 
-	&__window, .video-player__controls
+	&__window,
+	&__controls
 		margin 0 auto
 		visibility hidden
-		&_visible, .video-player__controls_visible
+		&_visible, 
+		&__controls_visible
 			visibility visible
 	&__window
 		display block
@@ -83,3 +85,19 @@
 			transition .1s
 	&__scroll-bar_volume
 		width 80px
+
+	@media (max-width:650px)
+		&__box
+			padding-y 40px
+	@media (max-width:585px)
+		&__window
+			padding-x 15px
+
+	@media (max-width:550px)
+		&__window,
+		&__contain
+		&__controls
+			width 100%
+		&__controls
+			padding-x 10px
+
