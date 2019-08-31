@@ -21,12 +21,20 @@
 		&_outer-link
 			color $white
 	@media (max-width:960px)
-		justify-content center
-		flex-wrap wrap
+		&__wrap
+			justify-content center
+			flex-wrap wrap
 	@media (max-width:486px)
 		font-size 10px
+		&__designed,
 		&__copyright
-			margin-bottom 0
+			margin-bottom 5px
+			display flex
+			align-items center
 	@media (max-width:390px)
 		&__item
 			padding-x 10px
+	@media (max-width:350px)
+		&__item
+			padding-x 5px
+			border none
