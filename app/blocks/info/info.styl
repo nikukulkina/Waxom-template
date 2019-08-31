@@ -6,6 +6,7 @@
 
 	&__info-block
 		width 22%
+		text-align justify
 	&__logo
 		width 64px
 		height 56px
@@ -83,4 +84,27 @@
 	&__widget-photo
 		margin-bottom 5px
 		width 49%
+	@media (max-width:800px)
+		&__info-block
+			width 32%
+			&_widgets
+				display none
+	@media (max-width:700px)
+		padding-bottom 5px
+		flex-wrap wrap
+		&__info-block
+			width 48%
+			&_twitter
+				padding-x 10px
+				width 100%
+	@media (max-width:500px)
+		&__info-block
+			padding-x 5px
+			width 100%
+			&_about
+				margin-bottom 20px
+
+
+
+	
 	
