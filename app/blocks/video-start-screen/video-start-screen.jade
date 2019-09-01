@@ -1,0 +1,8 @@
+include /blocks/icon/icon
+include /blocks/title/title
+
+mixin video-start-screen()
+	+b.video-start-screen&attributes(attributes)
+		+e.contain
+			+icon('icon-play').play
+			+title('Waxom Video Presentation', 'Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius, qui sequitur mutationem consuetudium.')._video-player

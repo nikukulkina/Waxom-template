@@ -6,7 +6,8 @@ include /blocks/slider/slider
 include /blocks/browsers/browsers
 include /blocks/insertion/insertion
 include /blocks/projects/projects
-include /blocks/video-player/video-player
+include /blocks/video-youtube/video-youtube
+include /blocks/video-start-screen/video-start-screen
 include /blocks/mobile-dev/mobile-dev
 include /blocks/statistyx/statistyx
 include /blocks/logos/logos
@@ -42,7 +43,9 @@ mixin page-main()
 			+container()
 				+projects()
 		+e('section').presentation
-			+video-player()
+			+video-youtube()
+			+container()
+				+video-start-screen()
 		+e('section').mobile
 			+container()
 				+mobile-dev()
