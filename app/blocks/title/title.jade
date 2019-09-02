@@ -1,5 +1,5 @@
 mixin title(title, description)
 	+b('h2').title&attributes(attributes)
 		!= title
-			+e('p').description
-				!= description
+		+e('span').description
+			!= description
