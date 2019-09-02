@@ -1,0 +1,32 @@
+.search-form
+	// position relative
+	&__box
+		position absolute
+		z-index 100
+		visibility hidden
+		width 0
+		background-color rgba(0, 0, 0, .9)
+		transform translateY(100%)
+		opacity 0
+		transition .3s
+		&_active
+			visibility visible
+			width 100%
+			transform translate(-90%, 100%)
+			opacity 1
+	&__icon
+		color $white
+		size (28px)
+		transition color .5s ease-out
+		will-change color
+		&:hover
+			color #978979
+	&__input
+		padding 5px
+		width 100%
+		font-size 22px
+		color $white
+		background transparent
+		border none
+		border-bottom 2px solid #978979
+		

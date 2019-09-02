@@ -16,4 +16,7 @@ $(() => {
 	player();
 	accordeon();
 	burger();
+	document.querySelector('.search-form__icon').addEventListener('click', () => {
+		document.querySelector('.search-form__box').classList.toggle('search-form__box_active');
+	});
 });

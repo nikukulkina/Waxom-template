@@ -1,5 +1,7 @@
 include /blocks/icon/icon
 include /blocks/burger-menu/burger-menu
+include /blocks/search-form/search-form
+
 
 mixin header(items)
 	+b('header').header&attributes(attributes)
@@ -21,8 +23,6 @@ mixin header(items)
 			+e.mobile-menu
 				each link in items
 					+e('a').mobile-item(href=link.href)!= link.name
-			+e('a').logo
+			+e('a').logo(href='#')
 				+icon('logo-icon').icon
-			+e('a')
-				+icon('icon-search').nav-icon
-					
+			+search-form()
