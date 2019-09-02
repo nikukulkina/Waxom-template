@@ -7,7 +7,6 @@ export const player = () => {
 	play.addEventListener('click', () => {
 		contain.classList.add('video-start-screen__contain_hidden');
 		videoPlayer.classList.add('video-youtube_visible');
-		const attr = videoPlayerFrame.getAttribute('src');
-		videoPlayerFrame.setAttribute('src', attr + '&autoplay=1');
+		videoPlayerFrame.contentWindow.postMessage(JSON.stringify({event: 'command', func: 'playVideo'}), '*');
 	});
 };
