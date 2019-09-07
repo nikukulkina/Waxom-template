@@ -2,6 +2,6 @@ include /blocks/icon/icon
 
 mixin search-form()
 	+b.search-form&attributes(attributes)
-		+icon('icon-search').icon
+		+icon('icon-search').icon.js-icon
 		+e('form').box
 			+e('input').input(type='text' placeholder='Search...')
