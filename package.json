@@ -17,7 +17,7 @@
     "stylus"
   ],
   "scripts": {
-    "start": "gulp --debug",
+    "start": "gulp --inspect",
     "build": "gulp build",
     "production": "cross-env NODE_ENV=production npm-run-all clean build",
     "make-block": "babel-node make-block.js",
@@ -100,7 +100,6 @@
     "husky": "^0.11.9",
     "jade-get-data": "^1.0.0",
     "jade-injected": "^1.0.2",
-    "jquery": "^2.1.4",
     "merge-stream": "^1.0.0",
     "node-notifier": "^4.3.1",
     "npm-install-webpack-plugin": "^2.0.2",
@@ -118,11 +117,16 @@
     "stylus": "^0.54.5",
     "stylus-import-if-exist": "^1.1.0",
     "stylus-svg-size-template": "^1.0.0",
-    "svg4everybody": "^2.0.0",
-    "swiper": "^4.5.0",
     "webpack": "^1.12.9",
     "webpack-stats-logger": "^1.0.1",
     "webpack-stream": "^3.1.0"
   },
-  "dependencies": {}
+  "resolutions": {
+    "natives": "1.1.4"
+  },
+  "dependencies": {
+    "svg4everybody": "^2.0.0",
+    "swiper": "^4.5.0",
+    "jquery": "^2.1.4"
+  }
 }
