@@ -127,6 +127,6 @@
   "dependencies": {
     "svg4everybody": "^2.0.0",
     "swiper": "^4.5.0",
-    "jquery": "^2.1.4"
+    "jquery": "^3.5.0"
   }
 }
